@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>AI Frenzy Treasure Hunt</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css?ver=1.1" />
+
+        <script>
+          function formSubmit() {
+            document.forms["myForm"].submit();
+          }
+        </script>
+
+        <script type="text/javascript" src="script.js?a=1"></script>
+
+    </head>
+
+    <body>
+        <div class="container">
+          <img id="backgroundImage" src="AI.jpg" alt="Background"/>
+
+          <div class="main">
+            <div class="instructions">
+              <h3>Welcome to the AI Frenzy Treasure Hunt! <br/></h3>
+
+              <p>
+                <br/>
+                Hidden around the event floor are Intelligent Banking Chatbots hosted on Oracle's Mobile Cloud Enterprise. <br/>
+                The objective of the treasure hunt is straight forward. <br/><br/>
+
+                The more Chatbots you find, the more points you gain.
+                Click on the QR code below to interact with the Chatbot. <br/>
+                <br/>
+                Have Fun!<br/><br/>
+              </p>
+            </div>
+
+            <div class="details">
+              <form name="myForm" action="/action_page.php" method="get">
+                Name: <input type="text" name="name"><br>
+                Email: <input type="text" name="email"><br><br>
+                <input type="button" onclick="formSubmit()" value="Submit!">
+              </form>
+              <br/>
+            </div>
+
+            <div class="QRCode">
+                <a href="http://m.me/101588356971248" target="_blank"><img id="qrIMG" src="QRCodes/RiseConsumerFinanceTransparent.png" alt="Banking Bot QR Code"/><a/>
+            </div>
+          </div>
+
+        </div>
+    </body>
+</html>
