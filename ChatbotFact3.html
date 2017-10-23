@@ -14,7 +14,6 @@
         </script>
 
         <script type="text/javascript" src="script.js?a=1"></script>
-
     </head>
 
     <body>
@@ -31,7 +30,7 @@
                 <br/><br/>
                 The objective of the treasure hunt is straight forward.
                 The more Chatbots and statistics you find, the more points you gain.
-                Click on the QR code below to interact with the Chatbot in Facebook Messenger. <br/>
+                Answer the question below to reveal the correct Chatbot statistic. <br/>
                 <br/>
                 Have Fun!<br/><br/>
               </p>
@@ -46,8 +45,19 @@
               <br/>
             </div>
 
-            <div class="QRCode">
-                <a href="http://m.me/383756502025058" target="_blank"><img id="qrIMG" src="QRCodes/BankingBotTransparent.png" alt="Banking Bot QR Code"/><a/>
+            <div class="statistic">
+              If the average smartphone user has 27 apps on their phone, typically how many of these apps do they use everyday?
+
+              <FORM method="POST" onSubmit="return checkAnswer(this,'A');">
+                  <INPUT TYPE="RADIO" VALUE="A" NAME="cc">
+                    A. 4-6</br>
+                  <INPUT TYPE="RADIO" VALUE="B" NAME="cc">
+                    B. 6-8</br>
+                  <INPUT TYPE="RADIO" VALUE="C" NAME="cc">
+                    C. 7-10<br/><br/>
+                  <INPUT id="button" TYPE="SUBMIT" VALUE="Submit Answer">
+              </FORM>
+
             </div>
           </div>
 
