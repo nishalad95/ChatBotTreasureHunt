@@ -1,3 +1,4 @@
+
 function checkAnswer(quizForm, theAnswer, urlRight, urlWrong) {
   var s = "?";
 

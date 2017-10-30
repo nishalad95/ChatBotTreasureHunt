@@ -6,18 +6,31 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style.css?ver=1.1" />
-
-        <script>
-          function formSubmit() {
-            document.forms["myForm"].submit();
-          }
-        </script>
-
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script type="text/javascript" src="script.js?a=1"></script>
-
     </head>
 
     <body>
+
+
+      <script>
+      $(document).ready(function(){
+        // after the page elements are all loaded, then run the script
+        // Set the input field with unique ID #email to a value
+        $("#email").val("someone@test.com");
+        // Set the input field with unique ID #name
+        $("#name").val("John Doe");
+
+      });
+
+        function formSubmit() {
+          document.forms["myForm"].submit();
+        }
+      </script>
+
+      
         <div class="container">
           <img id="backgroundImage" src="AI.jpg" alt="Background"/>
 
@@ -39,8 +52,8 @@
 
             <div class="details">
               <form name="myForm" method='post' action='#'>
-                Name: <input type="text" name="name"><br>
-                Email: <input type="text" name="email"><br><br>
+                Name: <input id="name" type="text" name="name" autocomplete="on"><br>
+                Email: <input id="email" type="text" name="email" autocomplete="on"><br><br>
                 <input id="button" type="button" onclick="formSubmit()" value="Submit!">
               </form>
               <br/>
