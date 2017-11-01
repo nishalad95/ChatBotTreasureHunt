@@ -15,21 +15,6 @@
     <body>
 
 
-      <script>
-      $(document).ready(function(){
-        // after the page elements are all loaded, then run the script
-        // Set the input field with unique ID #email to a value
-        $("#email").val("someone@test.com");
-        // Set the input field with unique ID #name
-        $("#name").val("John Doe");
-
-      });
-
-        function formSubmit() {
-          document.forms["myForm"].submit();
-        }
-      </script>
-
 
         <div class="container">
           <img id="backgroundImage" src="AI.jpg" alt="Background"/>
@@ -51,10 +36,10 @@
             </div>
 
             <div class="details">
-              <form name="myForm" method='post' action='#'>
+              <form name="myForm" method="post" action='info.php'>
                 Name: <input id="name" type="text" name="name" autocomplete="on"><br>
                 Email: <input id="email" type="text" name="email" autocomplete="on"><br><br>
-                <input id="button" type="button" onclick="formSubmit()" value="Submit!">
+                <input id="button" type="button" value="Submit!">
               </form>
               <br/>
             </div>
